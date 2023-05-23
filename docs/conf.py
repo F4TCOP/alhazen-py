@@ -1,4 +1,4 @@
-project = 'alhazen'
+#project = 'alhazen-py'
 
 
 
