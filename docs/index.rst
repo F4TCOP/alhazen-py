@@ -1,6 +1,6 @@
 Index
 =====
-TODO: Build new Version of readthedocs with every commit on github - DONE
+* TODO: Build new Version of readthedocs with every commit on github - DONE
 
 TODO: Wieso wird test.rst nicht in der Leiste links angezeigt? Man findet die Seite nur über die Suchfunktion
 
