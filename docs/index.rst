@@ -1,3 +1,10 @@
+.. toctree::
+    :hidden:
+
+    self
+    test
+
+
 Index
 =====
 TODO: Build new Version of readthedocs with every commit on github - DONE
