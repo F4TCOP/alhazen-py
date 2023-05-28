@@ -1,3 +1,3 @@
 test
 ====
-das ist (k)ein test
+* das ist (k)ein test
