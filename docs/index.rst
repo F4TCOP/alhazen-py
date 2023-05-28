@@ -3,7 +3,7 @@
 
     self
     test
-
+    example
 
 Index
 =====
