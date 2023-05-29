@@ -3,7 +3,9 @@ Setup
 -------
 Install
 -------
-If all external dependencies are available, a simple pip install alhazen-py suffices. We recommend installing alhazen-py inside a virtual environment (virtualenv): ::
+If all external dependencies are available, a simple pip install alhazen-py suffices. We recommend installing alhazen-py inside a virtual environment (virtualenv):
+
+..  code-block:: bash
 
     python3.10 -m venv venv
     source venv/bin/activate
@@ -15,7 +17,9 @@ Now, the alhazen command should be available on the command line within the virt
 
 Development and Testing
 -----------------------
-For development, we recommend using alhazen-py inside a virtual environment (virtualenv). By thing the following steps in a standard shell (bash), one can run the Alhazen tests: ::
+For development, we recommend using alhazen-py inside a virtual environment (virtualenv). By thing the following steps in a standard shell (bash), one can run the Alhazen tests:
+
+..  code-block:: bash
 
     git clone https://github.com/martineberlein/alhazen-py.git
     cd alhazen-py/
@@ -31,7 +35,9 @@ For development, we recommend using alhazen-py inside a virtual environment (vir
 
 Build
 -----
-**alhazen-py** is build locally as follows: ::
+**alhazen-py** is build locally as follows:
+
+..  code-block:: bash
 
     git clone https://github.com/martineberlein/alhazen-py.git
     cd alhazen-py/
