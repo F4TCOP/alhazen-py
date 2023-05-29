@@ -1,7 +1,8 @@
 Example
 =======
-How to use Alhazen
-To illustrate Alhazen’s capabilities, we start with a quick motivating example.
+How to use *Alhazen*
+--------------------
+To illustrate *Alhazen*’s capabilities, we start with a quick motivating example.
 First, let us introduce our program under test: The Calculator. ::
 
     import math
@@ -35,7 +36,7 @@ The output looks like this: ::
      ('tan(-12)', OracleResult.NO_BUG),
      ('sqrt(-3)', OracleResult.BUG)]
 
-We see that sqrt(-3) results in the failure of our calculator program. We can now use Alhazen to learn the root causes of the program's failure.
+We see that sqrt(-3) results in the failure of our calculator program. We can now use **Alhazen** to learn the root causes of the program's failure.
 
 First, we need to define the input format of the calculator with a grammar: ::
 
@@ -53,7 +54,7 @@ First, we need to define the input format of the calculator with a grammar: ::
         "<digits>": ["<digit>", "<digit><digits>"],
     }
 
-Then, we can call Alhazen with the grammar, some sample inputs, and the evaluation function (program under test). ::
+Then, we can call **Alhazen** with the grammar, some sample inputs, and the evaluation function (program under test). ::
 
     from alhazen import Alhazen
 
@@ -64,7 +65,7 @@ Then, we can call Alhazen with the grammar, some sample inputs, and the evaluati
     )
     trees = alhazen.run()
 
-By default, Alhazen will do 10 iterations of its refinement process. Finally, Alhazen returns the learned decision tree that describes the failure-inducing inputs.
+By default, **Alhazen** will do 10 iterations of its refinement process. Finally, **Alhazen** returns the learned decision tree that describes the failure-inducing inputs.
 
 For our calculator, the learned decision tree looks something like this:
 
