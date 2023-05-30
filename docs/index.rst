@@ -2,6 +2,7 @@
 
     setup
     example
+    guide
     todo
 
 Index
