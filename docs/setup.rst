@@ -1,6 +1,6 @@
 Setup
 ====================================
--------
+
 Install
 -------
 If all external dependencies are available, a simple pip install alhazen-py suffices. We recommend installing alhazen-py inside a virtual environment (virtualenv):
