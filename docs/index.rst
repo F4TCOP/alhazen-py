@@ -1,6 +1,5 @@
 .. toctree::
 
-    self
     setup
     example
     todo
