@@ -1,5 +1,5 @@
-Example
-=======
+Examples
+========
 How to use *Alhazen*
 --------------------
 To illustrate *Alhazen*’s capabilities, we start with a quick motivating example.
