@@ -1,5 +1,5 @@
 Developer's Guide to Alhazen
-=========================
+============================
 
 .. toctree::
    :maxdepth: 2
@@ -8,3 +8,7 @@ Developer's Guide to Alhazen
    guide
    feature_collector
    features
+   generrator
+   learner
+   input_specification
+   performance_evaluator
