@@ -21,6 +21,15 @@ MAX_ITERATION = 20
 
 
 class Alhazen:
+    """
+        The solver class for ISLa formulas/constraints. Its top-level methods are
+
+        :meth:`~alhazen.Alhazen.show_model`
+          Returns decision tree of the model.
+
+        :meth:`~alhazen.Alhazen.run`
+          Attempts to learn a model to identify bugs. Returns the model.
+    """
     def __init__(
         self,
         initial_inputs: List[str],
