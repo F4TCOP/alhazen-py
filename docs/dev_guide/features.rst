@@ -8,8 +8,3 @@ The Feature Class
 
 Main Functions
 ^^^^^^^^^^^^^^
-
-
-feature alhazen
-feature back
-

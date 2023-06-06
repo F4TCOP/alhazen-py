@@ -1,4 +1,3 @@
-
 The Feature Collector Class
 ---------------------------
 

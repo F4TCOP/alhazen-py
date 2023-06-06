@@ -5,10 +5,10 @@ Developer's Guide to Alhazen
    :maxdepth: 2
    :caption: Contents:
 
-   guide
+   alhazen
    feature_collector
    features
-   generrator
+   generator
    learner
    input_specification
    performance_evaluator
