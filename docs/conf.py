@@ -7,5 +7,5 @@ sys.path.insert(0, os.path.abspath('../src'))
 html_title = 'Alhazen'
 html_theme = 'sphinx_book_theme'
 
-extensions = ['sphinx.ext.todo', 'sphinx.ext.viewcode', 'sphinx.ext.autodoc', 'python_docs_theme','myst_parser']
+extensions = ['sphinx.ext.todo', 'sphinx.ext.viewcode', 'sphinx.ext.autodoc']
 
