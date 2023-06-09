@@ -11,21 +11,18 @@ You can find in :doc:`features` what kind of features are implemented.
 
 .. literalinclude:: ../../src/alhazen/feature_collector.py
    :pyobject: Collector.get_all_features
+   :caption:  Wrapper for collect features method
 
-Wrapper for collect features method
 
 .. literalinclude:: ../../src/alhazen/feature_collector.py
    :pyobject: Collector.collect_features_from_list
-
-Colletcts all the grammar based features. 
+   :caption: Colletcts all the grammar based features.
 
 .. literalinclude:: ../../src/alhazen/feature_collector.py
    :pyobject: Collector.collect_features
-
-Takes a Derivation Tree and 
+   :caption: Takes a derivation tree as input returns parsed features
 
 .. literalinclude:: ../../src/alhazen/feature_collector.py
    :pyobject: Collector.feature_collection
-
-
+   :caption: Gets all one and two dimensional features.
 
