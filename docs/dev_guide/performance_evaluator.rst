@@ -6,9 +6,17 @@ The Evaluator Class
 Main Functions of all Learners
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. code-block:: text
+
+    Output: List[Dict]
+
 .. automethod:: alhazen.performance_evaluator.Evaluator.run
 .. literalinclude:: ../../src/alhazen/performance_evaluator.py
    :pyobject: Evaluator.run
+
+.. code-block:: text
+
+    Output: List[Dict]
 
 .. automethod:: alhazen.performance_evaluator.Evaluator.evaluate_experiments
 .. literalinclude:: ../../src/alhazen/performance_evaluator.py

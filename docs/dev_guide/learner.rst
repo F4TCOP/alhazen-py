@@ -20,6 +20,11 @@ Main Functions of all Learners
 .. literalinclude:: ../../src/alhazen/learner.py
    :pyobject: Learner.get_input_specifications
 
+
+.. code-block:: text
+
+    Output: Model
+
 .. automethod:: alhazen.learner.Learner.visualize
 .. literalinclude:: ../../src/alhazen/learner.py
    :pyobject: Learner.visualize
@@ -28,12 +33,12 @@ Main Functions of all Learners
 .. literalinclude:: ../../src/alhazen/learner.py
    :pyobject: Learner.predict
 
-.. automethod:: alhazen.learner.Learner.train
+.. automethod:: alhazen.learner.DecisionTreeLearner.train
 .. literalinclude:: ../../src/alhazen/learner.py
    :pyobject: DecisionTreeLearner.train
    :caption: Description: trains model on data
 
-.. automethod:: alhazen.learner.Learner.get_input_specifications
+.. automethod:: alhazen.learner.DecisionTreeLearner.get_input_specifications
 .. literalinclude:: ../../src/alhazen/learner.py
    :pyobject: DecisionTreeLearner.get_input_specifications
    :caption: Description: gets input specification
