@@ -26,13 +26,13 @@ Main Functions
     Input: grammar: Grammar, new_input_specifications: List[InputSpecification], timeout: int
     Output: List[str]
 
-.. automethod:: alhazen.generator.generate_samples_advanced
+.. autofunction:: alhazen.generator.generate_samples_advanced
 .. literalinclude:: ../../src/alhazen/generator.py
    :pyobject: generate_samples_advanced
    :language: python
    :caption: Description: Generating samples
 
-.. automethod:: alhazen.generator.generate_samples_random
+.. autofunction:: alhazen.generator.generate_samples_random
 .. literalinclude:: ../../src/alhazen/generator.py
    :pyobject: generate_samples_random
    :language: python

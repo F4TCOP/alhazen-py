@@ -33,7 +33,7 @@ Main Functions of all Learners
    :pyobject: DecisionTreeLearner.train
    :caption: Description: trains model on data
 
-.. autofunction:: alhazen.learner.Learner.get_input_specifications
+.. automethod:: alhazen.learner.Learner.get_input_specifications
 .. literalinclude:: ../../src/alhazen/learner.py
    :pyobject: DecisionTreeLearner.get_input_specifications
    :caption: Description: gets input specification
