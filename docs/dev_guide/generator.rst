@@ -1,7 +1,6 @@
 The Generator Class
 -------------------
 
-
 .. autoclass:: alhazen.generator.SimpleGenerator
 .. autoclass:: alhazen.generator.AdvancedGenerator
 .. autoclass:: alhazen.generator.ISLAGenerator
