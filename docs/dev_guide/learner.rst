@@ -26,8 +26,9 @@ Main Functions of all Learners
 
 .. literalinclude:: ../../src/alhazen/learner.py
    :pyobject: DecisionTreeLearner.train
-   :caption: trains model on data
+   :caption: Description: trains model on data
 
 .. literalinclude:: ../../src/alhazen/learner.py
    :pyobject: DecisionTreeLearner.get_input_specifications
+   :caption: Description: gets input specification
 
