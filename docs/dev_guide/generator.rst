@@ -15,6 +15,7 @@ Main Functions
     Input: forest: List of Derivation Trees, spec: TODO, grammar: Dict{str:List[str]}
     Output: Tuple(Bool, Derivation Tree)
 
+.. automethod:: alhazen.generator.best_trees
 .. literalinclude:: ../../src/alhazen/generator.py
    :pyobject: best_trees
    :language: python
@@ -25,12 +26,13 @@ Main Functions
     Input: grammar: Grammar, new_input_specifications: List[InputSpecification], timeout: int
     Output: List[str]
 
+.. automethod:: alhazen.generator.generate_samples_advanced
 .. literalinclude:: ../../src/alhazen/generator.py
    :pyobject: generate_samples_advanced
    :language: python
    :caption: Description: Generating samples
 
-
+.. automethod:: alhazen.generator.generate_samples_random
 .. literalinclude:: ../../src/alhazen/generator.py
    :pyobject: generate_samples_random
    :language: python

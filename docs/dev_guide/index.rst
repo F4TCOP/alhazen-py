@@ -12,4 +12,3 @@ Developer's Guide to Alhazen
    learner
    input_specification
    performance_evaluator
-   temp

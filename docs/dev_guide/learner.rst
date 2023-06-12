@@ -11,23 +11,29 @@ The Learner Class
 Main Functions of all Learners
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. automethod:: alhazen.learner.Learner.train
 .. literalinclude:: ../../src/alhazen/learner.py
    :pyobject: Learner.train
    :caption: trains model on data
 
+.. automethod:: alhazen.learner.Learner.get_input_specifications
 .. literalinclude:: ../../src/alhazen/learner.py
    :pyobject: Learner.get_input_specifications
 
+.. automethod:: alhazen.learner.Learner.visualize
 .. literalinclude:: ../../src/alhazen/learner.py
    :pyobject: Learner.visualize
 
+.. automethod:: alhazen.learner.Learner.predict
 .. literalinclude:: ../../src/alhazen/learner.py
    :pyobject: Learner.predict
 
+.. automethod:: alhazen.learner.Learner.train
 .. literalinclude:: ../../src/alhazen/learner.py
    :pyobject: DecisionTreeLearner.train
    :caption: Description: trains model on data
 
+.. autofunction:: alhazen.learner.Learner.get_input_specifications
 .. literalinclude:: ../../src/alhazen/learner.py
    :pyobject: DecisionTreeLearner.get_input_specifications
    :caption: Description: gets input specification
