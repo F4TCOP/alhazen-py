@@ -14,15 +14,14 @@ Main Functions
 .. literalinclude:: ../../src/alhazen/generator.py
    :pyobject: best_trees
    :language: python
-   :caption: Selects best Decision tree.
+   :caption: Description: Selects best Decision tree. Input: forest: List of Derivation Trees, spec: TODO, grammar: Dict{str:List[str]} Output: Tuple(Bool, Derivation Tree) // TODO: Tuple richtig hier?
 
 .. literalinclude:: ../../src/alhazen/generator.py
    :pyobject: generate_samples_advanced
    :language: python
-   :caption: Generating samples
+   :caption: Description: Generating samples // TODO: what kind of samples
 
 .. literalinclude:: ../../src/alhazen/generator.py
    :pyobject: generate_samples_random
    :language: python
-   :caption: Generates samples randomly
-
+   :caption: Description: Generates samples randomly
