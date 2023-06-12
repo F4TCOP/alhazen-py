@@ -20,11 +20,6 @@ Main Functions of all Learners
 .. literalinclude:: ../../src/alhazen/learner.py
    :pyobject: Learner.get_input_specifications
 
-
-.. code-block:: text
-
-    Output: Model
-
 .. automethod:: alhazen.learner.Learner.visualize
 .. literalinclude:: ../../src/alhazen/learner.py
    :pyobject: Learner.visualize
