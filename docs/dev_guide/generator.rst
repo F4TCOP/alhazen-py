@@ -19,7 +19,7 @@ Main Functions
 .. literalinclude:: ../../src/alhazen/generator.py
    :pyobject: generate_samples_advanced
    :language: python
-   :caption: If there are no input specifications: generate some random samples
+   :caption: Generating samples
 
 .. literalinclude:: ../../src/alhazen/generator.py
    :pyobject: generate_samples_random

@@ -2,9 +2,6 @@ The Learner Class
 -----------------
 
 .. autoclass:: alhazen.learner.Learner
-
-    Abstract Class
-
 .. autoclass:: alhazen.learner.DecisionTreeLearner
 .. autoclass:: alhazen.learner.RandomForestLearner
 .. autoclass:: alhazen.learner.XGBTLearner
@@ -26,3 +23,11 @@ Main Functions of all Learners
 
 .. literalinclude:: ../../src/alhazen/learner.py
    :pyobject: Learner.predict
+
+.. literalinclude:: ../../src/alhazen/learner.py
+   :pyobject: DecisionTreeLearner.train
+   :caption: trains model on data
+
+.. literalinclude:: ../../src/alhazen/learner.py
+   :pyobject: DecisionTreeLearner.get_input_specifications
+
