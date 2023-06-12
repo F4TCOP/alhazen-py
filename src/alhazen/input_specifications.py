@@ -85,7 +85,7 @@ class Requirement:
 
     feature  : Is the associated feature class
     quant    : The quantifier
-    value    : The value of the requirement. Note that for existence features this value
+    value    : The value of the requirement. Note that for existence features this value \
                 is allways between 0 and 1.
     """
 
