@@ -20,9 +20,9 @@ Main Functions
 .. autofunction:: alhazen.features.extract_length
 .. literalinclude:: ../../src/alhazen/features.py
    :pyobject: extract_length
-   :caption: extracts feature length
+   :caption: Description: Extracts feature length
 
 .. autofunction:: alhazen.features.extract_is_digit
 .. literalinclude:: ../../src/alhazen/features.py
    :pyobject: extract_is_digit
-   :caption: Extracts all digit features from the grammar and returns them as a list. grammar : The input grammar.
+   :caption: Description: Extracts digit feature
