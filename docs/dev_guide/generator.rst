@@ -22,12 +22,10 @@ Main Functions
    :language: python
    :caption: Description: Generating samples
 
-
-.. code-block:: text
-
-    Output: List of DerivationTree
-
 .. autofunction:: alhazen.generator.generate_samples_random
+
+   -> List of DerivationTree
+
 .. literalinclude:: ../../src/alhazen/generator.py
    :pyobject: generate_samples_random
    :language: python

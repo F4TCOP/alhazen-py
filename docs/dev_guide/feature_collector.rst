@@ -9,11 +9,10 @@ Main Functions
 This method gives back all features defined by the grammar.
 You can find in :doc:`features` what kind of features are implemented.
 
-.. code-block:: text
-
-    Output: List of Features as Dict{feature.name:feature.value}
-
 .. automethod:: alhazen.feature_collector.Collector.get_all_features
+
+   -> List of Features as Dict{feature.name:feature.value}
+
 .. literalinclude:: ../../src/alhazen/feature_collector.py
    :pyobject: Collector.get_all_features
    :caption:  Colletcts all the grammar based features.
