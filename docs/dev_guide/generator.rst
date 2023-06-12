@@ -11,15 +11,26 @@ The Generator Class
 Main Functions
 ^^^^^^^^^^^^^^
 
+.. code-block:: text
+
+    Input: forest: List of Derivation Trees, spec: TODO, grammar: Dict{str:List[str]}
+    Output: Tuple(Bool, Derivation Tree)
+
 .. literalinclude:: ../../src/alhazen/generator.py
    :pyobject: best_trees
    :language: python
-   :caption: Description: Selects best Decision tree. Input: forest: List of Derivation Trees, spec: TODO, grammar: Dict{str:List[str]} Output: Tuple(Bool, Derivation Tree) // TODO: Tuple richtig hier?
+   :caption: Description: Selects best Decision tree.
+
+.. code-block:: text
+
+    Input: grammar: Grammar, new_input_specifications: List[InputSpecification], timeout: int
+    Output: List[str]
 
 .. literalinclude:: ../../src/alhazen/generator.py
    :pyobject: generate_samples_advanced
    :language: python
-   :caption: Description: Generating samples // TODO: what kind of samples
+   :caption: Description: Generating samples
+
 
 .. literalinclude:: ../../src/alhazen/generator.py
    :pyobject: generate_samples_random
