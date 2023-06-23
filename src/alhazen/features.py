@@ -69,7 +69,7 @@ class ExistenceFeature(Feature):
 
     name : A unique identifier name for this feature.
     rule : The production rule.
-    key  : The feature key, equal to the rule attribute for production features,
+    key  : The feature key, equal to the rule attribute for production features,\
            or equal to the corresponding alternative for alternative features.
     """
 
@@ -110,7 +110,7 @@ class NumericInterpretation(Feature):
     [0-9], '.', and '-'. The returned feature value corresponds to the maximum
     floating-point number interpretation of the derived words of a production.
 
-    name : A unique identifier name for this feature. Should not contain Whitespaces.
+    name : A unique identifier name for this feature. Should not contain Whitespaces.\
            e.g., 'num(<integer>)'
     rule : The production rule.
     """
