@@ -25,6 +25,7 @@ from alhazen.input import Input
 
 from fuzzingbook.GrammarFuzzer import GrammarFuzzer
 from isla.derivation_tree import DerivationTree
+from isla.solver import ISLaSolver
 
 
 def best_trees(forest, spec, grammar):
@@ -311,8 +312,26 @@ class ISLAGenerator(Generator):
             constraints.append(constraint)
 
         p = " and ".join(constraints)
-
+        
         return p
 
     def generate(self, input_specification: InputSpecification, **kwargs) -> Input:
-        raise NotImplementedError
+
+        constraints = self.transform_constraints(input_specification)        
+
+        solver = ISLaSolver(
+            grammar=self.grammar,
+            formula=constraints,
+            max_number_free_instantiations=1,
+            max_number_smt_instantiations=1, 
+            )
+        
+        assert(solver.check(constraints))
+
+        try:
+            return Input(
+            tree= solver.solve(),
+            oracle = None, # TODO: martin fragen ob wir hier was angeben sollen oder nicht
+            features = None)
+        except Exception as e:
+            return e

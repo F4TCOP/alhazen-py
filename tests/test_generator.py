@@ -84,6 +84,21 @@ class TestGenerator(unittest.TestCase):
         for _ in range(9):
             print(solver.solve())
 
+    def test_isla_generator2(self):
+        from alhazen_formalizations.calculator import grammar_alhazen as grammar
+        isla_generator = ISLAGenerator(grammar)
+        
+        req_sqrt = Requirement(
+            ExistenceFeature("exists(<function>@0)", "<function>", "sqrt"), ">", "0.5"
+        )
+        req_term = Requirement(
+            NumericInterpretation("num(<term>)", "<term>"), ">", "-900.0"
+        )
+        input_specification = InputSpecification([req_sqrt, req_term])
+
+        input = isla_generator.generate(input_specification)
+
+        print(input)
 
 if __name__ == "__main__":
     unittest.main()
