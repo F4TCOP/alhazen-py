@@ -3,6 +3,7 @@ import copy
 import random
 from abc import ABC, abstractmethod
 from typing import List, Tuple, Dict
+import re
 
 from fuzzingbook.Parser import EarleyParser
 from fuzzingbook.GrammarFuzzer import (
@@ -302,7 +303,10 @@ class ISLAGenerator(Generator):
             if feature.rule == feature.key:
                 # 1D Case
                 if isinstance(feature, NumericInterpretation):
-                    constraint = f"str.to.int({feature.rule}) {requirement.quant} {requirement.value}"
+                    if int(float((requirement.value))) < 0:
+                        requirement.value = int(float((requirement.value))) + (1 << 16) # adding 2^16 --- 0.3 s gain 
+                        
+                    constraint = f"str.to.int({feature.rule}) {requirement.quant} {str(requirement.value)}"
                 if isinstance(feature, LengthFeature):
                     constraint = f"str.len({feature.rule}) {requirement.quant} {requirement.value}"
             else:
@@ -326,12 +330,20 @@ class ISLAGenerator(Generator):
             max_number_smt_instantiations=1, 
             )
         
-        assert(solver.check(constraints))
+        tree = solver.solve()
+        tree_string = tree_to_string(tree)
+        pattern = re.compile(r"[-+]?\d+(?:\.\d+)?")
+        numbers = re.findall(pattern, tree_string)
+
+        for number in numbers:
+            new_number = int(float(number)) - (1 << 16) # subtracting 2^16 --- 0.3 s gain 
+            tree_string = tree_string.replace(number, str(new_number), 1)        
+
+        parser = EarleyParser(self.grammar)
+        trees = parser.parse(tree_string)
+        new_tree = DerivationTree.from_parse_tree(list(trees)[0])
 
         try:
-            return Input(
-            tree= solver.solve(),
-            oracle = None, # TODO: martin fragen ob wir hier was angeben sollen oder nicht
-            features = None)
+            return Input(tree = new_tree)
         except Exception as e:
             return e
