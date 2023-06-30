@@ -4,6 +4,10 @@ from sklearn import tree
 from alhazen.requirementExtractionDT.treetools import remove_unequal_decisions
 
 
+
+
+
+
 def show_tree(clf, feature_names):
     dot_data = tree.export_graphviz(
         remove_unequal_decisions(clf),

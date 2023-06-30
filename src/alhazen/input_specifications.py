@@ -8,6 +8,8 @@ from fuzzingbook.Grammars import Grammar
 from alhazen.features import Feature
 from alhazen.requirementExtractionDT.requirements import tree_to_paths
 
+from isla.derivation_tree import DerivationTree
+
 
 def extracting_prediction_paths(clf, feature_names, data, classes=None):
     # determine the bounds
@@ -156,3 +158,6 @@ def create_new_input_specification(derivation_tree, all_features) -> InputSpecif
         requirement_list.append(Requirement(feature_class, quant, value))
 
     return InputSpecification(requirement_list)
+
+def transform_tree_to_constraints(decision_tree) -> str:
+    print("hallo")
