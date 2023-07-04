@@ -105,6 +105,9 @@ class TreePath:
     def requirements(self) -> List[Requirement]:
         return self.__requirements
 
+    def get_requirements(self) -> List[Requirement]:
+        return self.__requirements
+    
     def __len__(self) -> int:
         return len(self.__requirements)
 
